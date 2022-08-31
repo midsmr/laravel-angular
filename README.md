@@ -18,7 +18,7 @@ composer require midsmr/laravel-angular
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="laravel-angular-views"
+php artisan vendor:publish --tag="angular-assets"
 ```
 
 ## Changelog
