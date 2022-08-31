@@ -4,4 +4,8 @@ namespace Midsmr\LaravelAngular;
 
 class LaravelAngular
 {
+    public function helloWorld(): string
+    {
+        return 'Hello World!';
+    }
 }
