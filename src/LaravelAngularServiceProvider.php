@@ -2,23 +2,26 @@
 // Copyright (c) 2022 Jerry<midsmr@qq.com>.
 namespace Midsmr\LaravelAngular;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class LaravelAngularServiceProvider extends PackageServiceProvider
+class LaravelAngularServiceProvider extends ServiceProvider
 {
-    public function registeringPackage()
+    public function register()
     {
-        $this->app->singleton(LaravelAngular::class, function () {
-            return new LaravelAngular();
-        });
+        //
     }
 
-    public function configurePackage(Package $package): void
+    public function boot()
     {
-        $package
-            ->name('laravel-angular')
-            ->hasViews()
-            ->hasAssets();
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../resources/views' => base_path("resources/views/vendor/angular"),
+            ], "angular-views");
+
+            $this->publishes([
+                __DIR__ . '/../resources/dist' => public_path("vendor/angular"),
+            ], "angular-assets");
+        }
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'angular');
     }
 }
