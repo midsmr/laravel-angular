@@ -7,19 +7,9 @@
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
-## Installation & Usage
+## Usage
 
-You can install the package via composer:
-
-```bash
-composer require midsmr/laravel-angular
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="angular-assets"
-```
+[Wiki](https://github.com/midsmr/laravel-angular/wiki/Usage)
 
 ## Changelog
 
