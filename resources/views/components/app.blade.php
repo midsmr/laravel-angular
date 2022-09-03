@@ -71,7 +71,7 @@
 </div>
 
 <script src="{{ asset('vendor/angular/js/jquery.js') }}"></script>
-<script src="{{ asset('vendor/angular/js/bootstrap.js') }}"></script>
+<script src="{{ asset('vendor/angular/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('vendor/angular/js/ui-load.js') }}"></script>
 <script src="{{ asset('vendor/angular/js/ui-jp.config.js') }}"></script>
 <script src="{{ asset('vendor/angular/js/ui-jp.js') }}"></script>
