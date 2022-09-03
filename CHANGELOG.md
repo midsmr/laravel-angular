@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-angular` will be documented in this file.
 
+## Release 1.0.3🌼 - 2022-09-03
+
+- 组件使用Blade特性
+
 ## Release 1.0.2🌞 - 2022-09-03
 
 - 修复ICON不生效的BUG
