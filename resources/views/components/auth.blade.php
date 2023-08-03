@@ -25,10 +25,9 @@
             <div class="wrapper text-center">
                 <strong>{{ $title }}</strong>
             </div>
-            <form name="form" class="form-validation">
-                <div class="text-danger wrapper text-center"></div>
-                {{ $slot }}
-            </form>
+            
+            {{ $slot }}
+            
         </div>
         {{ $footer }}
     </div>
