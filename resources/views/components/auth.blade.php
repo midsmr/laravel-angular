@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/angular/css/font.css') }}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset('vendor/angular/css/app.min.css') }}" type="text/css"/>
 
-    {{ $style }}
+    @stack('styles')
 </head>
 <body>
 <div class="app app-header-fixed ">
@@ -41,6 +41,6 @@
 <script src="{{ asset('vendor/angular/js/ui-nav.js') }}"></script>
 <script src="{{ asset('vendor/angular/js/ui-toggle.js') }}"></script>
 <script src="{{ asset('vendor/angular/js/ui-client.js') }}"></script>
-{{ $scripts }}
+@stack('scripts')
 </body>
 </html>
