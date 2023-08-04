@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-angular` will be documented in this file.
 
+## Release 1.0.7 - 2023-08-04
+
+@push块
+
 ## Release 1.0.6 - 2023-08-03
 
 update section
